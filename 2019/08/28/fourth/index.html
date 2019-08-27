@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="utf-8">
+  
+
+  
+  <title>《现代 JavaScript 教程》学习笔记(一) | Jashting</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="这一系列文章是我看这个网站的笔记,这是我见过写得最棒的 JS 教程! 2.5 数据类型￼JavaScript 中有七种基本的类型。  number 用于任何类型的数字：整数或者浮点数。 string 用于字符串。一个字符串可以包含一个或多个字符，所以没有单独的单字符类型。 boolean 用于 true 和 false。 null 用于未知的值 —— 只有一个 null 值的独立类型。 undef">
+<meta property="og:type" content="article">
+<meta property="og:title" content="《现代 JavaScript 教程》学习笔记(一)">
+<meta property="og:url" content="http://yoursite.com/2019/08/28/fourth/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="这一系列文章是我看这个网站的笔记,这是我见过写得最棒的 JS 教程! 2.5 数据类型￼JavaScript 中有七种基本的类型。  number 用于任何类型的数字：整数或者浮点数。 string 用于字符串。一个字符串可以包含一个或多个字符，所以没有单独的单字符类型。 boolean 用于 true 和 false。 null 用于未知的值 —— 只有一个 null 值的独立类型。 undef">
+<meta property="og:locale" content="en">
+<meta property="og:image" content="http://yoursite.com/images/fourth/001.png">
+<meta property="og:image" content="http://yoursite.com/images/fourth/002.png">
+<meta property="og:image" content="http://yoursite.com/images/fourth/003.png">
+<meta property="og:image" content="http://yoursite.com/images/fourth/004.png">
+<meta property="og:image" content="http://yoursite.com/images/fourth/005.png">
+<meta property="og:image" content="http://yoursite.com/images/fourth/006.png">
+<meta property="og:image" content="http://yoursite.com/images/fourth/007.png">
+<meta property="og:image" content="http://yoursite.com/images/fourth/008.png">
+<meta property="og:image" content="http://yoursite.com/images/fourth/009.png">
+<meta property="og:image" content="http://yoursite.com/images/fourth/0010.png">
+<meta property="og:image" content="http://yoursite.com/images/fourth/0011.png">
+<meta property="og:image" content="http://yoursite.com/images/fourth/0012.png">
+<meta property="og:image" content="http://yoursite.com/images/fourth/0013.png">
+<meta property="og:image" content="http://yoursite.com/images/fourth/0014.png">
+<meta property="og:image" content="http://yoursite.com/images/fourth/0015.png">
+<meta property="og:image" content="http://yoursite.com/images/fourth/0016.png">
+<meta property="og:image" content="http://yoursite.com/images/fourth/0017.png">
+<meta property="og:image" content="http://yoursite.com/images/fourth/0018.png">
+<meta property="og:image" content="http://yoursite.com/images/fourth/0019.png">
+<meta property="og:image" content="http://yoursite.com/images/fourth/0020.png">
+<meta property="og:image" content="http://yoursite.com/images/fourth/0021.png">
+<meta property="og:image" content="http://yoursite.com/images/fourth/0022.png">
+<meta property="og:image" content="http://yoursite.com/images/fourth/0023.png">
+<meta property="og:image" content="http://yoursite.com/images/fourth/0024.png">
+<meta property="og:image" content="http://yoursite.com/images/fourth/0025.png">
+<meta property="og:image" content="http://yoursite.com/images/fourth/0026.png">
+<meta property="og:image" content="http://yoursite.com/images/fourth/0027.png">
+<meta property="og:image" content="http://yoursite.com/images/fourth/0028.png">
+<meta property="og:image" content="http://yoursite.com/images/fourth/0029.png">
+<meta property="og:image" content="http://yoursite.com/images/fourth/0030.png">
+<meta property="og:image" content="http://yoursite.com/images/fourth/0031.png">
+<meta property="og:image" content="http://yoursite.com/images/fourth/0032.png">
+<meta property="og:image" content="http://yoursite.com/images/fourth/0033.png">
+<meta property="og:updated_time" content="2019-08-27T17:27:29.261Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="《现代 JavaScript 教程》学习笔记(一)">
+<meta name="twitter:description" content="这一系列文章是我看这个网站的笔记,这是我见过写得最棒的 JS 教程! 2.5 数据类型￼JavaScript 中有七种基本的类型。  number 用于任何类型的数字：整数或者浮点数。 string 用于字符串。一个字符串可以包含一个或多个字符，所以没有单独的单字符类型。 boolean 用于 true 和 false。 null 用于未知的值 —— 只有一个 null 值的独立类型。 undef">
+<meta name="twitter:image" content="http://yoursite.com/images/fourth/001.png">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+</html>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Jashting</a>
+        <!-- Hexo -->
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-fourth" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/08/28/fourth/" class="article-date">
+  <time datetime="2019-08-27T16:26:02.000Z" itemprop="datePublished">2019-08-28</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      《现代 JavaScript 教程》学习笔记(一)
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>这一系列文章是我看<a href="https://zh.javascript.info" target="_blank" rel="noopener">这个网站</a>的笔记,这是我见过写得最棒的 JS 教程!</p>
+<h4 id="2-5-数据类型"><a href="#2-5-数据类型" class="headerlink" title="2.5 数据类型"></a>2.5 数据类型</h4><p><img src="/images/fourth/001.png" alt=" "><br>￼<img src="/images/fourth/002.png" alt=" "><br>JavaScript 中有七种基本的类型。</p>
+<ul>
+<li>number 用于任何类型的数字：整数或者浮点数。</li>
+<li>string 用于字符串。一个字符串可以包含一个或多个字符，所以没有单独的单字符类型。</li>
+<li>boolean 用于 true 和 false。</li>
+<li>null 用于未知的值 —— 只有一个 null 值的独立类型。</li>
+<li>undefined 用于未定义的值 —— 只有一个 undefined 值的独立类型。</li>
+<li>object 用于更复杂的数据结构。</li>
+<li>symbol 用于唯一的标识符。</li>
+</ul>
+<h4 id="2-6-类型转换"><a href="#2-6-类型转换" class="headerlink" title="2.6 类型转换"></a>2.6 类型转换</h4><p>ToNumber<br>￼<img src="/images/fourth/003.png" alt=" "></p>
+<a id="more"></a>
+<p>笔记:<br>alert(+ ‘2’) // 返回2<br>也就是说,加号和字符串拼接会转换成数字</p>
+<p>ToBoolean<br>￼<img src="/images/fourth/004.png" alt=" "><br>笔记:<br>alert( Boolean(“”) ); // false<br>alert( Boolean(“ “) ); // 空白, 也是 true (任何非空字符串是 true)</p>
+<h4 id="2-7-运算符"><a href="#2-7-运算符" class="headerlink" title="2.7  运算符"></a>2.7  运算符</h4><p>数字转化功能，一元运算符 +<br>￼<img src="/images/fourth/005.png" alt=" "><br>幂运算符 **<br>￼<img src="/images/fourth/006.png" alt=" "><br>自相加/自相减<br>￼<img src="/images/fourth/007.png" alt=" "><br>逗号运算符<br>￼<img src="/images/fourth/008.png" alt=" "></p>
+<h4 id="2-8-值的比较"><a href="#2-8-值的比较" class="headerlink" title="2.8 值的比较"></a>2.8 值的比较</h4><p>不同类型间的比较<br>￼<img src="/images/fourth/009.png" alt=" "></p>
+<h4 id="2-11-逻辑运算符"><a href="#2-11-逻辑运算符" class="headerlink" title="2.11 逻辑运算符"></a>2.11 逻辑运算符</h4><p>或运算寻找第一个真值<br>￼<img src="/images/fourth/0010.png" alt=" "><br>与操作寻找第一个假值<br>￼<img src="/images/fourth/0011.png" alt=" "><br>￼<img src="/images/fourth/0012.png" alt=" "><br>!（非）<br>￼<img src="/images/fourth/0013.png" alt=" "></p>
+<h4 id="2-12-循环：while-和-for"><a href="#2-12-循环：while-和-for" class="headerlink" title="2.12 循环：while 和 for"></a>2.12 循环：while 和 for</h4><p>break/continue 标签<br>￼<img src="/images/fourth/0014.png" alt=" "></p>
+<h4 id="2-13-“switch”-语句"><a href="#2-13-“switch”-语句" class="headerlink" title="2.13 “switch” 语句"></a>2.13 “switch” 语句</h4><p>值类型<br>￼<img src="/images/fourth/0015.png" alt=" "></p>
+<h4 id="2-14-函数"><a href="#2-14-函数" class="headerlink" title="2.14 函数"></a>2.14 函数</h4><p>parameters 参数</p>
+<h4 id="2-15-函数表达式和箭头函数"><a href="#2-15-函数表达式和箭头函数" class="headerlink" title="2.15 函数表达式和箭头函数"></a>2.15 函数表达式和箭头函数</h4><p>￼<img src="/images/fourth/0016.png" alt=" "><br>￼<img src="/images/fourth/0017.png" alt=" "><br>￼<img src="/images/fourth/0018.png" alt=" "></p>
+<h4 id="4-1-对象"><a href="#4-1-对象" class="headerlink" title="4.1 对象"></a>4.1 对象</h4><p>存在值检查<br>￼<img src="/images/fourth/0019.png" alt=" "><br>￼<img src="/images/fourth/0020.png" alt=" "></p>
+<p>复制和合并，Object.assign<br>￼<img src="/images/fourth/0021.png" alt=" "></p>
+<h4 id="4-3-Symbol-类型"><a href="#4-3-Symbol-类型" class="headerlink" title="4.3 Symbol 类型"></a>4.3 Symbol 类型</h4><p>Symbol<br>￼<img src="/images/fourth/0022.png" alt=" "></p>
+<p>字面量中的 Symbol<br>￼<img src="/images/fourth/0023.png" alt=" "></p>
+<p>Symbol 在 for…in 中被跳过<br>￼<img src="/images/fourth/0024.png" alt=" "></p>
+<p>全局 symbol<br>￼<img src="/images/fourth/0025.png" alt=" "></p>
+<p>Symbol.keyFor<br>￼<img src="/images/fourth/0026.png" alt=" "></p>
+<h4 id="4-4-对象方法与-“this”"><a href="#4-4-对象方法与-“this”" class="headerlink" title="4.4 对象方法与 “this”"></a>4.4 对象方法与 “this”</h4><p>方法中的 “this”<br>￼<img src="/images/fourth/0027.png" alt=" "></p>
+<p>“this” 不受限制<br>￼<img src="/images/fourth/0028.png" alt=" "></p>
+<p>箭头函数没有自己的 “this”<br>￼<img src="/images/fourth/0029.png" alt=" "></p>
+<p>总结<br>    •     存储在对象中函数称之为『方法』。</p>
+<h4 id="4-5-对象原始值转换"><a href="#4-5-对象原始值转换" class="headerlink" title="4.5 对象原始值转换"></a>4.5 对象原始值转换</h4><p>￼<img src="/images/fourth/0030.png" alt=" "></p>
+<h4 id="4-6-构造函数和操作符-“new”"><a href="#4-6-构造函数和操作符-“new”" class="headerlink" title="4.6 构造函数和操作符 “new”"></a>4.6 构造函数和操作符 “new”</h4><p>构造函数<br>￼<img src="/images/fourth/0031.png" alt=" "></p>
+<p>这是构造函数的主要目的 — 实现可重用的对象创建代码<br>￼<img src="/images/fourth/0032.png" alt=" "></p>
+<p>构造函数 Return<br>￼<img src="/images/fourth/0033.png" alt=" "></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/08/28/fourth/" data-id="cjzu1le850000c7ximrchjm0b" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2019/08/20/third/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">为什么喜欢听播客</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/08/">August 2019</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2019/08/28/fourth/">《现代 JavaScript 教程》学习笔记(一)</a>
+          </li>
+        
+          <li>
+            <a href="/2019/08/20/third/">为什么喜欢听播客</a>
+          </li>
+        
+          <li>
+            <a href="/2019/08/20/second/">医生和程序员,相同和不同</a>
+          </li>
+        
+          <li>
+            <a href="/2019/08/16/first/">我为什么放弃学中医</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2019 Jashting<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>
